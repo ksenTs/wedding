@@ -1,6 +1,6 @@
-<?php
+﻿<?php
 
-$text = "<span style='color:red; font-size: 35px; line-height: 40px; magin: 10px;'>Error! Please try again.</span>";
+$text = "<span style='color:#eaaca0; font-size: 35px; line-height: 40px; magin: 10px;'>Ошибка! Попробуйте снова</span>";
 
 if(isset($_POST['submitcontact']))
 {
@@ -19,7 +19,7 @@ if(isset($_POST['submitcontact']))
 	 
 	if(@mail($to,$subject,$message,$headers))
 	{
-	  $text = "<span style='color:blue; font-size: 35px; line-height: 40px; margin: 10px;'>Your Message was sent successfully !</span>";
+	  $text = "<span style='color:#eaaca0; font-size: 35px; line-height: 40px; margin: 10px;'>Ваше письмо было успешно отправлено !</span>";
 	}
 
 
@@ -36,10 +36,7 @@ if(isset($_POST['submitcontact']))
     <!-- Basic Page Needs
   ================================================== -->
 	<meta charset="utf-8">
-	<title>zHarvest - Free Html5 Templates</title>
-	<meta name="description" content="Free Responsive Html5 Css3 Templates | zerotheme.com">
-	<meta name="author" content="www.zerotheme.com">
-	
+	<title>Салон Анастасия</title>
     <!-- Mobile Specific Metas
   ================================================== -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -72,104 +69,94 @@ if(isset($_POST['submitcontact']))
 
 <body class="archive-page">
 	<div class="wrap-body">
-		<header>
-			<div class="wrap-header" >
-				<!--Top-->
-				<div id="top">
-					<div class="zerogrid">
-						<div class="row">
-							<div class="col-1-3">
-								<span>Welcome To My Site</span>
-							</div>
-							<div class="col-2-3">
-								<ul class="list-inline top-link link">
-									<li><a href="https://www.facebook.com/ZerothemeDotCom/">Facebook</a></li>
-									<li><a href="#">Instagram</a></li>
-									<li><a href="#">Twitter</a></li>
-									<li><a href="#">Google +</a></li>
-									<li><a href="#">Pinterest</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!---Main Header--->
-				<div class="main-header">
-					<div class="zerogrid">
-						<div class="row">
-							<div class="hero-heading">
-								<sup>AGRICULTURE COMPANY</sup>
-								<span>zHarvest</span>
-								<div class="tl"></div>
-								<div class="tr"></div>
-								<div class="br"></div>
-								<div class="bl"></div>
-							</div>
-						</div>
-					</div>
-				</div>
-				
-				<!---Top Menu--->
-				<div id="cssmenu" >
-					<ul>
-					   <li class="active"><a href="index.html"><span>zHarvest</span></a></li>
-					   <li class="has-sub"><a href="#"><span>Category</span></a>
-						  <ul>
-							 <li class="has-sub"><a href="#"><span>Item 1</span></a>
-								<ul>
-								   <li><a href="#"><span>Sub Item</span></a></li>
-								   <li class="last"><a href="#"><span>Sub Item</span></a></li>
-								</ul>
-							 </li>
-							 <li class="has-sub"><a href="#"><span>Item 2</span></a>
-								<ul>
-								   <li><a href="#"><span>Sub Item</span></a></li>
-								   <li class="last"><a href="#"><span>Sub Item</span></a></li>
-								</ul>
-							 </li>
-						  </ul>
-					   </li>
-					   <li><a href="archive.html"><span>Archive</span></a></li>
-					   <li><a href="actual.html"><span>About</span></a></li>
-					   <li class="last"><a href="contact.html"><span>Contact</span></a></li>
-					</ul>
-				</div>
-				
-			</div>
-		</header>
+        <header>
+
+            <!---Main Header--->
+            <div class="main-header">
+                <div class="zerogrid">
+                    <div class="row">
+                        <div class="hero-heading">
+                            <sup>СВАДЕБНЫЙ САЛОН</sup>
+                            <span>Анастасия</span>
+                            <div class="tl"></div>
+                            <div class="tr"></div>
+                            <div class="br"></div>
+                            <div class="bl"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!---Top Menu--->
+            <div id="cssmenu" >
+                <ul>
+                    <li ><a href="index.html"><span>Главная</span></a>
+                    <li class="has-sub"><a href="#"><span>Каталог платьев</span></a>
+                        <ul>
+                            <li class="has-sub"><a href="wedding_dress.html">
+                                    <span>Свадебные </span>
+                                    <br>
+                                    <span>платья</span>
+                                </a>
+                            </li>
+                            <li class="has-sub"><a href="#">
+                                    <span>Детские</span>
+                                    <br>
+                                    <span>наряды</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="accessories.html"><span>Аксессуары</span></a></li>
+
+                    <li><a href="decor.html"><span>Свадебный декор</span></a></li>
+
+                    <li class="has-sub"><a href="#"><span>Дополнительные услуги</span></a>
+                        <ul>
+                            <li class="has-sub"><a href="#"><span>Стилисты и визажисты</span></a>
+                            </li>
+                            <li class="has-sub"><a href="#">
+                                    <span>Фотографы и</span>
+                                    <br>
+                                    <span>видеооператоры</span>
+                                </a>
+                            </li>
+                            <li class="has-sub"><a href="#">
+                                    <span>Декор</span>
+                                    <br>
+                                    <span>автомобилей</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </header>
 
 		<!--////////////////////////////////////Container-->
 		<section id="container">
 			<div class="wrap-container zerogrid">
-				<div class="crumbs">
-					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="contact.html">Contact</a></li>
-					</ul>
-				</div>
 				<div id="main-content">
 					<div class="wrap-content" style="border-right: none">
 						<div class="row">
-							<h1 class="t-center" style="margin: 40px 0;color: #212121;letter-spacing: 2px;font-weight: 500;">Contact Us</h1>
+							<h1 class="t-center" style="margin: 40px 0;color: #212121;letter-spacing: 2px;font-weight: 500;">Мы ждем Вас в нашем салоне</h1>
 							<div class="col-full">
-								<div id="map" style="height: 450px;"></div>
+                                <div id="map" style="height: 450px;">
+                                    <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:450px;width:900px;'><div id='gmap_canvas' style='height:440px;width:900px;'></div><div><small><a href="https://embedgooglemaps.com/de/">https://embedgooglemaps.com/de/</a></small></div><div><small><a href="https://mrpromokod.ru/">mrpromokud</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:13,center:new google.maps.LatLng(56.250871,43.45352690000004),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(56.250871,43.45352690000004)});infowindow = new google.maps.InfoWindow({content:'<strong>Салон Анастасия</strong><br>Дзержинск, Народная 28<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+
+                                </div>
 							</div>
 							<div class="col-1-3">
 								<div class="wrap-col">
-									<h3 style="margin: 20px 0">Contact Info</h3>
-									<strong>SED UT PERSPICIATIS UNDE OMNIS ISTE NATUS ERROR SIT VOLUPTATEM ACCUSANTIUM DOLOREMQUE LAUDANTIUM, TOTAM REM APERIAM.</strong>
-									<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque la udantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia.</p>
-									<p>JL.Kemacetan timur no.23. block.Q3<br>
-										Jakarta-Indonesia</p>
-									   <p>+6221 888 888 90 <br>
-										+6221 888 88891</p>
-									<p>info@yourdomain.com</p>
+									<h3 style="margin: 20px 0">Контактная информация</h3>
+									<p>Если Вас заинтересовали представленные модели или у Вас появились вопросы, свяжитесь с нами.</p>
+									<p>+79103952414</p>
+									   <p>Анастасия</p>
 								</div>
 							</div>
 							<div class="col-2-3">
 								<div class="wrap-col">
 									<div class="contact">
-										<h3 style="margin: 20px 0 20px 30px">Contact Form</h3>
+										<h3 style="margin: 20px 0 20px 30px">Есть вопрос?</h3>
 										<div id="contact_form">
 											<!--Warning-->
 											<center><?php echo $text;?></center>
@@ -178,29 +165,29 @@ if(isset($_POST['submitcontact']))
 												<label class="row">
 													<div class="col-1-2">
 														<div class="wrap-col">
-															<input type="text" name="name" id="name" placeholder="Enter name" required="required" />
+															<input type="text" name="name" id="name" placeholder="Ваше имя" required="required" />
 														</div>
 													</div>
 													<div class="col-1-2">
 														<div class="wrap-col">
-															<input type="email" name="email" id="email" placeholder="Enter email" required="required" />
+															<input type="email" name="email" id="email" placeholder="Ваш e-mail" required="required" />
 														</div>
 													</div>
 												</label>
 												<label class="row">
 													<div class="col-full">
 														<div class="wrap-col">
-														<input type="text" name="subject" id="subject" placeholder="Subject" required="required" />
+														<input type="text" name="subject" id="subject" placeholder="Тема" required="required" />
 														</div>
 													</div>
 												</label>
 												<label class="row">
 													<div class="wrap-col">
 														<textarea name="message" id="message" class="form-control" rows="4" cols="25" required="required"
-														placeholder="Message"></textarea>
+														placeholder="Текст письма"></textarea>
 													</div>
 												</label>
-												<center><input class="button button-skin" type="submit" name="submitcontact" value="Submit"></center>
+												<center><input class="button button-skin" type="submit" name="submitcontact" value="Отправить"></center>
 											</form>
 										</div>
 									</div>
@@ -213,9 +200,7 @@ if(isset($_POST['submitcontact']))
 		</section>
 		<!--////////////////////////////////////Footer-->
         <footer>
-            <div class="top-footer">
-                <div id="map" style="height: 450px;"></div>
-            </div>
+
 
             <div class="zerogrid wrap-footer">
                 <div class="row">
@@ -255,7 +240,6 @@ if(isset($_POST['submitcontact']))
 
 	<!-- Google Map -->
 	<script src="js/google-map.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB7V-mAjEzzmP6PCQda8To0ZW_o3UOCVCE&callback=initMap" async defer></script>
-	
+
 </body>
 </html>
